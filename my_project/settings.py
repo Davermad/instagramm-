@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-s(&3n&qpcfrpgrk#ke2fdm0cm^smjbu=j4#t7yf$2tz=0ie%cg
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['51.20.75.185', 'localhost', '127.0.0.1']
 
 
 # Application definition
@@ -80,24 +80,24 @@ WSGI_APPLICATION = 'my_project.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.sqlite3',
-#         'NAME': BASE_DIR / 'db.sqlite3',
-#     }
-# }
-
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'Instagramm',
-        'HOST': 'localhost',
-        'PORT': '5432',
-        'USER': 'postgres',
-        'PASSWORD': 'DanPosTgres738'
-
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
+
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql',
+#         'NAME': 'Instagramm',
+#         'HOST': 'localhost',
+#         'PORT': '5432',
+#         'USER': 'postgres',
+#         'PASSWORD': 'DanPosTgres738'
+#
+#     }
+# }
 
 
 # Password validation
